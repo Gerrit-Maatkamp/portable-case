@@ -1,13 +1,13 @@
-// import FooterComponent from "./components/ui/FooterComponent";
 // import HeaderComponent from "./components/ui/HeaderComponent";
 // import ProjectsComponent from "./components/ui/projects/ProjectsComponent";
 
+import HeaderComponent from "@/components/ui/HeaderComponent";
 import PhoneLink from "../components/ui/PhoneLink";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
-      {/* <HeaderComponent /> */}
+      <HeaderComponent />
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         {/* <ProjectsComponent /> */}
         <h1>Aaaaaah</h1>
