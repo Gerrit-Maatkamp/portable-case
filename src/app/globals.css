@@ -151,3 +151,42 @@
 .highlight button {
   @apply shadow-[0px_0px_5px_5px_var(--accent-rgb-3)];
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.word-animation {
+  display: inline-block;
+  opacity: 0;
+}
+
+.word-animation:nth-child(1) {
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.word-animation:nth-child(2) {
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 1.3s;
+}
+
+.word-animation:nth-child(3) {
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 4s;
+}
+
+.word-animation:nth-child(4) {
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 2.3s;
+}
+
+.word-animation:nth-child(5) {
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 2.8s;
+}
