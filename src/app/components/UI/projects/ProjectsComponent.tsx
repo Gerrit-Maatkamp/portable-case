@@ -6,7 +6,7 @@ import CompanyComponent from "../CompanyComponent";
 import projects from "./projects.json";
 
 import { ProjectItem } from "@/lib/types";
-import ProjectModal from "../DialogComponent";
+import ProjectModal from "../../../../components/ui/DialogComponent";
 
 const ProjectsComponent: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(
