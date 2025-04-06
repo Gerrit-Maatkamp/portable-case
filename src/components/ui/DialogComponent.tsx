@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback } from "react";
+import React from "react";
 import {
   Dialog,
   DialogClose,
@@ -26,11 +26,11 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
   open,
   onOpenChange,
 }) => {
-  const openUrl = useCallback((url: string | undefined) => {
-    if (typeof window !== "undefined" && url) {
-      window.open(url, "_blank");
-    }
-  }, []);
+  // const openUrl = useCallback((url: string | undefined) => {
+  //   if (typeof window !== "undefined" && url) {
+  //     window.open(url, "_blank");
+  //   }
+  // }, []);
 
   if (!project) return null;
 
