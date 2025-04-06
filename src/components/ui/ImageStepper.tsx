@@ -19,7 +19,6 @@ const ImageStepper: React.FC<ImageStepperProps> = ({
   const controlsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Store the ref value in a variable to use in cleanup
     const currentControlsRef = controlsRef.current;
 
     const observer = new IntersectionObserver(

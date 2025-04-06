@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useCallback } from "react";
 import {
   Dialog,
   DialogClose,
@@ -8,12 +8,11 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-// import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 
 import ImageStepper from "./ImageStepper";
 import { ProjectItem } from "@/lib/types";
-import { X } from "lucide-react";
-// import { Figma, Globe, X } from "lucide-react";
+import { Figma, Globe, X } from "lucide-react";
 
 interface ProjectModalProps {
   project: ProjectItem | null;
@@ -26,11 +25,11 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
   open,
   onOpenChange,
 }) => {
-  // const openUrl = useCallback((url: string | undefined) => {
-  //   if (typeof window !== "undefined" && url) {
-  //     window.open(url, "_blank");
-  //   }
-  // }, []);
+  const openUrl = useCallback((url: string | undefined) => {
+    if (typeof window !== "undefined" && url) {
+      window.open(url, "_blank");
+    }
+  }, []);
 
   if (!project) return null;
 
@@ -80,7 +79,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
             </div>
           ))}
 
-          {/* <div className="px-6">
+          <div className="px-6">
             <h3>{project.prototypeHeader}</h3>
             <p>{project.prototypeText}</p>
             <div className="flex flex-col sm:flex-row justify-center w-full gap-6">
@@ -118,7 +117,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 </Button>
               )}
             </div>
-          </div> */}
+          </div>
           <div className="h-16"></div>
         </div>
 

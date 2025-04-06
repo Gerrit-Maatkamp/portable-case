@@ -20,14 +20,12 @@ const ProjectsComponent: React.FC = () => {
   };
 
   const handleOpenChange = (open: boolean) => {
-    // This handles both opening and closing the dialog
     setIsModalOpen(open);
 
-    // If dialog is closing, we can clear the selected project after a delay
     if (!open) {
       setTimeout(() => {
         setSelectedProject(null);
-      }, 300); // Small delay to allow animation to complete
+      }, 300);
     }
   };
 
@@ -59,7 +57,6 @@ const ProjectsComponent: React.FC = () => {
         );
       })}
 
-      {/* ShadCN Dialog component */}
       <ProjectModal
         project={selectedProject}
         open={isModalOpen}
