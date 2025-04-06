@@ -12,7 +12,8 @@ import {
 
 import ImageStepper from "./ImageStepper";
 import { ProjectItem } from "@/lib/types";
-import { Figma, Globe, X } from "lucide-react";
+import { X } from "lucide-react";
+// import { Figma, Globe, X } from "lucide-react";
 
 interface ProjectModalProps {
   project: ProjectItem | null;
