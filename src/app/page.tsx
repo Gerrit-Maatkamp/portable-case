@@ -3,6 +3,7 @@
 
 import HeaderComponent from "@/components/ui/HeaderComponent";
 import PhoneLink from "../components/ui/PhoneLink";
+import FooterComponent from "@/components/ui/FooterComponent";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <h1>Aaaaaah</h1>
         <PhoneLink phoneNumber="3602984891" />
       </main>
-      {/* <FooterComponent className="flex gap-[24px] flex-wrap items-center justify-center bg-slate-100 dark:bg-slate-800 dark:text-white" /> */}
+      <FooterComponent className="flex gap-[24px] flex-wrap items-center justify-center bg-slate-100 dark:bg-slate-800 dark:text-white" />
     </div>
   );
 }
