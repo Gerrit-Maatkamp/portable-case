@@ -1,6 +1,6 @@
 import HeaderComponent from "@/components/ui/HeaderComponent";
 import FooterComponent from "@/components/ui/FooterComponent";
-import ProjectsComponent from "./components/ui/ProjectsComponent";
+import ProjectsComponent from "@/components/ui/ProjectsComponent";
 
 export default function Home() {
   return (

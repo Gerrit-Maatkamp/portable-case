@@ -3,10 +3,10 @@
 import React, { useState } from "react";
 import Project from "./ProjectComponent";
 import CompanyComponent from "./CompanyComponent";
-import projects from "../../../assets/data/projects.json";
+import projects from "../../assets/data/projects.json";
 
 import { ProjectItem } from "@/lib/types";
-import ProjectModal from "../../../components/ui/DialogComponent";
+import ProjectModal from "./DialogComponent";
 
 const ProjectsComponent: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(
