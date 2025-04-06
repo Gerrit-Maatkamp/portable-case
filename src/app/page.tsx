@@ -1,5 +1,5 @@
-import Header from "./components/Header";
 import Footer from "./components/ui/footer";
+import Header from "./components/ui/Header";
 import Projects from "./components/ui/projects/Projects";
 
 export default function Home() {
