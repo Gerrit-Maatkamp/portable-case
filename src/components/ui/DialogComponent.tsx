@@ -8,7 +8,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/Button";
+// import { Button } from "@/components/ui/Button";
 
 import ImageStepper from "./ImageStepper";
 import { ProjectItem } from "@/lib/types";
@@ -79,7 +79,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
             </div>
           ))}
 
-          <div className="px-6">
+          {/* <div className="px-6">
             <h3>{project.prototypeHeader}</h3>
             <p>{project.prototypeText}</p>
             <div className="flex flex-col sm:flex-row justify-center w-full gap-6">
@@ -117,7 +117,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 </Button>
               )}
             </div>
-          </div>
+          </div> */}
           <div className="h-16"></div>
         </div>
 
