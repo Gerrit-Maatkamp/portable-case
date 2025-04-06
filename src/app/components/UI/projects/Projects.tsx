@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div className="max-w-[1400px] mx-auto">
+    <div className="max-w-[1425px] mx-auto">
       {projects.map((project) => {
         return (
           <React.Fragment key={project.name}>
@@ -42,13 +42,13 @@ const Projects: React.FC = () => {
               linkedin={project.linkedIn}
               website={project.url}
             />
-            <div className="grid gap-4 p-4 grid-cols-4 justify-start lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+            <div className="flex flex-wrap gap-4 p-4 justify-center">
               {project.projects.map((p: ProjectItem) => {
                 return (
                   <div
                     key={p.name}
                     onClick={() => handleProjectClick(p)}
-                    className="max-w-[325px] bg-accent dark:bg-foreground rounded-md sm:w-full sm:max-w-full cursor-pointer"
+                    className="max-w-lg lg:max-w-md bg-accent dark:bg-slate-600 rounded-md cursor-pointer"
                   >
                     <Project {...p} />
                   </div>
