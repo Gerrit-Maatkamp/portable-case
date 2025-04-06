@@ -8,7 +8,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/ButtonComponent";
 
 import ImageStepper from "./ImageStepper";
 import { ProjectItem } from "@/lib/types";
