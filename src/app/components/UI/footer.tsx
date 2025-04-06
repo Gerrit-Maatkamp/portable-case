@@ -1,6 +1,5 @@
 // src/components/ui/footer.tsx
 import React from "react";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
 import PhoneLink from "./PhoneLink";
 import EmailLink from "./EmailLink";
@@ -10,7 +9,7 @@ interface FooterProps extends React.HTMLAttributes<HTMLElement> {
   className?: string;
 }
 
-const Footer = ({ className, ...props }: FooterProps) => {
+export default function Footer({ className, ...props }: FooterProps) {
   return (
     <footer
       className={cn("w-full border-t bg-background py-6", className)}
@@ -44,6 +43,4 @@ const Footer = ({ className, ...props }: FooterProps) => {
       </div>
     </footer>
   );
-};
-
-export { Footer };
+}

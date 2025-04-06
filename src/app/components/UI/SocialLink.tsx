@@ -14,11 +14,7 @@ type SocialLinksProps = {
   className?: string;
 };
 
-const SocialLinks: React.FC<SocialLinksProps> = ({
-  socials,
-  className = "",
-}) => {
-  // Get the appropriate URL and icon based on platform
+const SocialLinks: React.FC<SocialLinksProps> = ({ socials }) => {
   const getUrlAndIcon = (social: SocialItem) => {
     switch (social.platform.toLowerCase()) {
       case "linkedin":

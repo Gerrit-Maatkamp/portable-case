@@ -1,5 +1,6 @@
 .
 ├── README.md
+├── check-filenames.js
 ├── components.json
 ├── eslint.config.mjs
 ├── next-env.d.ts
@@ -9,6 +10,57 @@
 ├── postcss.config.mjs
 ├── print_structure.js
 ├── public
+│   ├── assets
+│   │   ├── fonts
+│   │   │   ├── HelveticaNeue.ttf
+│   │   │   ├── HelveticaNeueCondensedBlack.ttf
+│   │   │   ├── HomemadeApple-Regular.ttf
+│   │   │   └── fonts.css
+│   │   ├── icons
+│   │   │   ├── figma.tsx
+│   │   │   ├── linkedin.tsx
+│   │   │   └── website.tsx
+│   │   ├── images
+│   │   │   ├── church-sound
+│   │   │   │   ├── db-meter.jpg
+│   │   │   │   ├── decibel-meter-wireframe.png
+│   │   │   │   └── decibel-meter.png
+│   │   │   ├── decibel-meter.png
+│   │   │   ├── doordash-ssio
+│   │   │   │   ├── Doordash Synchronization.jpg
+│   │   │   │   ├── SSIO Single Location Example Flow Chart.jpg
+│   │   │   │   ├── doordashssio.png
+│   │   │   │   ├── flowchart-before.png
+│   │   │   │   ├── flowchart-goal.png
+│   │   │   │   ├── marketplace-connect.jpg
+│   │   │   │   └── marketplace-sync.jpg
+│   │   │   ├── golden-corral
+│   │   │   │   ├── golden-corral-large-party-res.png
+│   │   │   │   └── golden-corral.png
+│   │   │   ├── inventory
+│   │   │   │   ├── bluecart-inventory.png
+│   │   │   │   ├── inventory-live-view-wireframe.jpg
+│   │   │   │   ├── inventory-manual-entry.png
+│   │   │   │   ├── inventory-revision.jpg
+│   │   │   │   └── wine-cellar.jpeg
+│   │   │   ├── invoice-payment
+│   │   │   │   ├── bluecart-invoices.png
+│   │   │   │   ├── invoice-security.jpg
+│   │   │   │   ├── invoice-wireframe-payment-method-setup-done.jpg
+│   │   │   │   ├── invoice-wireframe.jpg
+│   │   │   │   └── mailboxes.jpeg
+│   │   │   ├── master-item
+│   │   │   │   ├── master-item-wireframe.jpg
+│   │   │   │   ├── master-item.jpg
+│   │   │   │   ├── masteritem.png
+│   │   │   │   ├── revolution-ordering-flow.png
+│   │   │   │   ├── revolution-ordering-improved-flow.png
+│   │   │   │   └── sql.png
+│   │   │   └── ssso
+│   │   │       ├── SSIO-Wireframe.jpg
+│   │   │       ├── SSSO.png
+│   │   │       └── ro-indy.jpg
+│   │   └── react.svg
 │   ├── file.svg
 │   ├── globe.svg
 │   ├── next.svg
@@ -20,23 +72,89 @@
 │   │   │   └── weather
 │   │   │       └── route.ts
 │   │   ├── components
-│   │   │   ├── UI
-│   │   │   │   ├── ContactLink.tsx
-│   │   │   │   ├── ModeToggle.tsx
-│   │   │   │   └── theme-provider.tsx
-│   │   │   └── header.tsx
+│   │   │   ├── Header.tsx
+│   │   │   └── ui
+│   │   │       ├── Company.tsx
+│   │   │       ├── EmailLink.tsx
+│   │   │       ├── ModeToggle.tsx
+│   │   │       ├── PhoneLink.tsx
+│   │   │       ├── SocialLink.tsx
+│   │   │       ├── ThemeProvider.tsx
+│   │   │       ├── dialog
+│   │   │       │   └── Dialog.tsx
+│   │   │       ├── footer.tsx
+│   │   │       ├── image-stepper
+│   │   │       │   └── ImageStepper.tsx
+│   │   │       ├── project
+│   │   │       │   └── Project.tsx
+│   │   │       └── projects
+│   │   │           ├── Projects.tsx
+│   │   │           └── projects.json
 │   │   ├── favicon.ico
 │   │   ├── globals.css
 │   │   ├── layout.tsx
 │   │   └── page.tsx
+│   ├── assets
+│   │   ├── fonts
+│   │   │   ├── HelveticaNeue.ttf
+│   │   │   ├── HelveticaNeueCondensedBlack.ttf
+│   │   │   ├── HomemadeApple-Regular.ttf
+│   │   │   └── fonts.css
+│   │   ├── icons
+│   │   │   ├── figma.tsx
+│   │   │   ├── linkedin.tsx
+│   │   │   └── website.tsx
+│   │   ├── images
+│   │   │   ├── church-sound
+│   │   │   │   ├── db-meter.jpg
+│   │   │   │   ├── decibel-meter-wireframe.png
+│   │   │   │   └── decibel-meter.png
+│   │   │   ├── decibel-meter.png
+│   │   │   ├── doordash-ssio
+│   │   │   │   ├── Doordash Synchronization.jpg
+│   │   │   │   ├── SSIO Single Location Example Flow Chart.jpg
+│   │   │   │   ├── doordashssio.png
+│   │   │   │   ├── flowchart-before.png
+│   │   │   │   ├── flowchart-goal.png
+│   │   │   │   ├── marketplace-connect.jpg
+│   │   │   │   └── marketplace-sync.jpg
+│   │   │   ├── golden-corral
+│   │   │   │   ├── golden-corral-large-party-res.png
+│   │   │   │   └── golden-corral.png
+│   │   │   ├── inventory
+│   │   │   │   ├── bluecart-inventory.png
+│   │   │   │   ├── inventory-live-view-wireframe.jpg
+│   │   │   │   ├── inventory-manual-entry.png
+│   │   │   │   ├── inventory-revision.jpg
+│   │   │   │   └── wine-cellar.jpeg
+│   │   │   ├── invoice-payment
+│   │   │   │   ├── bluecart-invoices.png
+│   │   │   │   ├── invoice-security.jpg
+│   │   │   │   ├── invoice-wireframe-payment-method-setup-done.jpg
+│   │   │   │   ├── invoice-wireframe.jpg
+│   │   │   │   └── mailboxes.jpeg
+│   │   │   ├── master-item
+│   │   │   │   ├── master-item-wireframe.jpg
+│   │   │   │   ├── master-item.jpg
+│   │   │   │   ├── masteritem.png
+│   │   │   │   ├── revolution-ordering-flow.png
+│   │   │   │   ├── revolution-ordering-improved-flow.png
+│   │   │   │   └── sql.png
+│   │   │   └── ssso
+│   │   │       ├── SSIO-Wireframe.jpg
+│   │   │       ├── SSSO.png
+│   │   │       └── ro-indy.jpg
+│   │   └── react.svg
 │   ├── components
 │   │   └── ui
-│   │       ├── button.tsx
-│   │       └── dropdown-menu.tsx
+│   │       ├── Button.tsx
+│   │       ├── DropdownMenu.tsx
+│   │       └── dialog.tsx
 │   └── lib
+│       ├── types.ts
 │       └── utils.ts
 ├── structure.txt
 ├── tailwind.config.js
 └── tsconfig.json
 
-11 directories, 29 files
+37 directories, 121 files
