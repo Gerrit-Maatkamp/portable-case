@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/Button";
 
-import ImageStepper from "../image-stepper/ImageStepper";
+import ImageStepper from "./image-stepper/ImageStepper";
 import { ProjectItem } from "@/lib/types";
 import { Figma, Globe, X } from "lucide-react";
 

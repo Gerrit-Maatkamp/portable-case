@@ -9,7 +9,7 @@ interface FooterProps extends React.HTMLAttributes<HTMLElement> {
   className?: string;
 }
 
-export default function Footer({ className, ...props }: FooterProps) {
+export default function FooterComponent({ className, ...props }: FooterProps) {
   return (
     <footer
       className={cn("w-full border-t bg-background py-6", className)}

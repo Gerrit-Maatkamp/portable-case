@@ -8,7 +8,7 @@ interface CompanyProps {
   website?: string;
 }
 
-const Company: React.FC<CompanyProps> = ({
+const CompanyComponent: React.FC<CompanyProps> = ({
   name,
   description,
   linkedin,
@@ -46,4 +46,4 @@ const Company: React.FC<CompanyProps> = ({
   );
 };
 
-export default Company;
+export default CompanyComponent;

@@ -1,6 +1,6 @@
-import { ModeToggle } from "./ui/ModeToggle";
+import { ModeToggle } from "./ModeToggle";
 
-export default function Header() {
+export default function HeaderComponent() {
   return (
     <>
       <header className="relative w-full p-3 flex flex-col justify-between transition-colors overflow-hidden">

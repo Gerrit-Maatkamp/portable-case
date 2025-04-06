@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import Project from "../project/Project";
-import Company from "../Company";
+import Project from "../ProjectComponent";
+import CompanyComponent from "../CompanyComponent";
 import projects from "./projects.json";
 
 import { ProjectItem } from "@/lib/types";
-import ProjectModal from "../dialog/Dialog";
+import ProjectModal from "../DialogComponent";
 
-const Projects: React.FC = () => {
+const ProjectsComponent: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(
     null
   );
@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
       {projects.map((project) => {
         return (
           <React.Fragment key={project.name}>
-            <Company
+            <CompanyComponent
               name={project.name}
               description={project.description}
               linkedin={project.linkedIn}
@@ -69,4 +69,4 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects;
+export default ProjectsComponent;
