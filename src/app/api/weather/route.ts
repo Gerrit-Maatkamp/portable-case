@@ -19,7 +19,7 @@ const params = {
 const range = (start: number, stop: number, step: number) =>
   Array.from({ length: (stop - start) / step }, (_, i) => start + i * step);
 
-export async function GET(req: Request) {
+export async function GET() {
   try {
     const responses = await fetchWeatherApi(url, params);
     const res = responses[0];

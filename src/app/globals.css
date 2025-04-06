@@ -138,3 +138,16 @@
 .group:hover .animate-shine {
   animation: shine 0.8s ease-in-out;
 }
+
+.dialog-open {
+  @apply overflow-hidden;
+}
+
+/* Add to globals.css */
+.highlight {
+  @apply transition-all duration-400 ease-in-out;
+}
+
+.highlight button {
+  @apply shadow-[0px_0px_5px_5px_var(--accent-rgb-3)];
+}

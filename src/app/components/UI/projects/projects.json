@@ -1,0 +1,257 @@
+[
+  {
+    "name": "Revolution Ordering",
+    "url": "https://www.revolutionordering.com/",
+    "linkedIn": "https://www.linkedin.com/company/revolution-ordering/",
+    "description": "A Digital Ordering Partner for Hospitality and Restaurant Companies",
+    "projects": [
+      {
+        "id": "RO-01",
+        "name": "Master Item",
+        "summary": "The goal of Master Item is to provide restaurants with an easy solution for managing complex menu items.",
+        "imageUrl": "assets/images/master-item/masteritem.png",
+        "steps": [
+          {
+            "heading": "Backstory",
+            "paragraph": "Revolution Ordering's current process is tedious and time-consuming, requiring our operations team to manually set up and maintain new customers in MySQL, increasing the risk of human error. Master Item setup is particularly complex, as the team must meticulously plan and map out the configuration before inputting everything into the database with SQL commands.",
+            "images": [
+              "assets/images/master-item/sql.png",
+              "assets/images/master-item/revolution-ordering-flow.png"
+            ]
+          },
+          {
+            "heading": "Goal",
+            "paragraph": "My aim for this design is to provide a clear interface where users can independently create, edit, and remove Master Items, and easily manage child items as needed, without relying on our team.",
+            "images": [
+              "assets/images/master-item/revolution-ordering-improved-flow.png"
+            ]
+          },
+          {
+            "heading": "The Process",
+            "paragraph": "First, I created a wireframe and shared it with stakeholders for feedback. After incorporating their input, I developed several iterations of the prototype, which you can explore below. This collaborative approach ensured the design aligned with user needs and business goals. From left to right, the design allows users to zoom into the master item, starting with a list of master items and progressively drilling down into the detailed specifics of single items. I aimed to provide users with a comprehensive overview while maintaining focus. To achieve this, the design features a lot of information on the screen, with a drop shadow effect that highlights the selected item, subtly overshadowing the list of all master items.",
+            "images": [
+              "assets/images/master-item/master-item-wireframe.jpg",
+              "assets/images/master-item/master-item.jpg"
+            ]
+          }
+        ],
+        "prototypeHeader": "The Prototype",
+        "prototype": "https://www.figma.com/proto/OqxYEb3YM0gHVT5pjzAgEf/Master-Item?page-id=0%3A1&node-id=2-139&viewport=335%2C449%2C0.11&t=zFtyF2R59AySYaAX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A139",
+        "prototypeText": "After discussing the wireframes with the team, I refined them into high-fidelity prototypes. These prototypes incorporate detailed visual and interactive elements, aligning closely with our design goals and user needs. By iterating through feedback and stakeholder testing, we ensured that the final prototypes deliver a seamless user experience and effectively streamline marketplace management."
+      },
+      {
+        "id": "RO-02",
+        "name": "Doordash Integration",
+        "summary": "Many restaurants aim to maximize their sales channels. One crucial avenue is Doordash, I developed the UI to facilitate customer connections between Revolution and Doordash.",
+        "imageUrl": "assets/images/doordash-ssio/doordashssio.png",
+        "steps": [
+          {
+            "heading": "Backstory",
+            "paragraph": "Revolution Ordering offers Connect, a product that enables restaurants to link their menus with multiple marketplaces. However, the initial sign-up process posed a major hurdle, requiring our operations team to communicate directly with marketplace teams via email. This project focused on designing a user interface to simplify restaurant management of marketplace connections, starting with DoorDash.",
+            "images": ["assets/images/doordash-ssio/flowchart-before.png"]
+          },
+          {
+            "heading": "Goal",
+            "paragraph": "As shown in the flow chart above, the process involves numerous steps from various parties, increasing the risk of human error and extending the completion time. Our goal is to streamline these steps and empower customers to manage the process independently.",
+            "images": ["assets/images/doordash-ssio/flowchart-goal.png"]
+          },
+          {
+            "heading": "Wireframes",
+            "paragraph": "To enhance the user experience, I created wireframes for a streamlined interface that allows users to manage all their marketplace connections efficiently. The left side of the page displays available marketplace options and lists the connected restaurants for each marketplace, facilitating synchronization. The right side provides a detailed synchronization history, enabling users to track the last update times and ensure successful menu updates.",
+            "images": [
+              "assets/images/doordash-ssio/marketplace-connect.jpg",
+              "assets/images/doordash-ssio/marketplace-sync.jpg"
+            ]
+          }
+        ],
+        "prototype": "https://www.figma.com/proto/Zg5vnElxXu8M9AjnkxpGTe/Doordash-SSIO?page-id=0%3A1&node-id=57-4047&viewport=1329%2C272%2C0.47&t=Xh79zbBcwWnaG3jP-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=57%3A4047",
+        "prototypeHeader": "The Prototype",
+        "prototypeText": "After discussing the wireframes with the team, I refined them into high-fidelity prototypes. These prototypes incorporate detailed visual and interactive elements, aligning closely with our design goals and user needs. By iterating through feedback and stakeholder testing, we ensured that the final prototypes deliver a seamless user experience and effectively streamline marketplace management."
+      },
+      {
+        "id": "RO-03",
+        "name": "Self Service Sign On",
+        "summary": "Self-Service Sign-On is designed to alleviate the operations workload and simplify the user sign-up process.",
+        "imageUrl": "assets/images/ssso/SSSO.png",
+        "steps": [
+          {
+            "heading": "Backstory",
+            "paragraph": "As shown in the flow chart, there are numerous back-and-forths between the customer and the operations team. After sales convinces a customer to sign with Revolution Ordering and collects the necessary information to sign contracts, operations still needs to gather all the location and menu data. This process is labor-intensive and has hindered Revolution Ordering from onboarding smaller restaurant businesses.",
+            "images": ["assets/images/master-item/revolution-ordering-flow.png"]
+          },
+          {
+            "heading": "Goal",
+            "paragraph": "The goal is straightforward: to create a seamless and efficient sign-up process, especially for smaller customers. The design should guide users through each step, ensuring they can quickly and easily set up their online storefront without any hassle.",
+            "images": [
+              "assets/images/master-item/revolution-ordering-improved-flow.png"
+            ]
+          },
+          {
+            "heading": "The Process",
+            "paragraph": "Throughout this process, we engaged in extensive discussions to ensure every necessary element was included. We debated whether a simple terms and conditions acceptance would suffice for customer sign-up or if a form was essential. We considered the importance of printer setups and whether they should be configured immediately or later. We also evaluated marketplace connections and the essential features small customers need to manage their websites. After creating wireframes, we spent considerable time iterating on the prototype, adding and removing steps as needed. Below, you can explore the final prototype we agreed upon.",
+            "images": [
+              "assets/images/ssso/SSIO-Wireframe.jpg",
+              "assets/images/ssso/ro-indy.jpg"
+            ]
+          }
+        ],
+        "prototype": "https://www.figma.com/proto/Zg5vnElxXu8M9AjnkxpGTe?node-id=0-1&t=aG9Q9s1N4Bmp4Dnu-6",
+        "prototypeText": "The Prototype"
+      },
+      {
+        "id": "RO-04",
+        "name": "Golden Corral Large Party Reservations",
+        "summary": "Although Revolution Ordering provided standard websites for customers, we designed a special website for Golden Corral to win them as a client.",
+        "imageUrl": "assets/images/golden-corral/golden-corral.png",
+        "steps": [
+          {
+            "heading": "There's gold in them thar hills!",
+            "paragraph": "When I started at Revolution Ordering, the websites all looked pretty much the same. Then we had the chance to win Golden Corral as a new customer. Together, we looked at how their customers would be using the web app and analyzed their average Group Reservation customers. Although in person they deal with large groups of teenagers and elderly people, we concluded that the people actually using the platform would be middle-aged individuals, generally from the Midwest and South of the US. To accommodate this demographic, I decided to use large fonts, minimize distractions, and include a checklist on the side. Golden Corral agreed that these changes would best serve their customers.",
+            "images": [
+              "assets/images/golden-corral/golden-corral-large-party-res.png"
+            ]
+          }
+        ],
+        "prototype": "https://www.figma.com/proto/gd1pt2XE7e5ZVxvyfeIA5q/GC---Party-Room?page-id=0%3A1&node-id=106-238&viewport=535%2C468%2C0.06&t=gVqdEPd7eWRTIKpU-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A3257",
+        "prototypeHeader": "The Prototype",
+        "prototypeText": "Winning Golden Corral as a client was a turning point. We focused on understanding their Group Reservation users. To tailor the platform, I opted for large fonts, minimized distractions, and added a practical checklist. Golden Corral embraced these changes for their potential to enhance user experience. Check out the prototype to see these improvements in action!",
+        "url": "https://largeparties.goldencorral.com/"
+      }
+    ]
+  },
+  {
+    "name": "BlueCart",
+    "url": "https://www.bluecart.com/",
+    "linkedIn": "https://www.linkedin.com/company/bluecarthq/",
+    "description": "An online ordering platform for the hospitality industry for wholesale and restaurants.",
+    "projects": [
+      {
+        "id": "BC-01",
+        "name": "Invoice Payment",
+        "summary": "BlueCart introduced BlueCart Pay, a method for vendors to send and receive payments for invoices from the restaurants they are connected to through BlueCart.",
+        "imageUrl": "assets/images/invoice-payment/bluecart-invoices.png",
+        "steps": [
+          {
+            "heading": "Email & Snailmail",
+            "paragraph": "Our customers have been relying on email and the post to send invoices. These outdated methods slow down transactions and increase the risk of lost invoices. By offering a streamlined digital invoicing platform, we can simplify this process for our restaurant customers, enhancing their efficiency and creating a new revenue stream for us.",
+            "images": ["assets/images/invoice-payment/mailboxes.jpeg"]
+          },
+          {
+            "heading": "Wireframes",
+            "paragraph": "This project started as a side project when a colleague from another department asked for help. I kicked things off with some wireframes to sketch out a straightforward invoice layout. We bounced ideas back and forth until we nailed down the prototype. The wireframes show two paths: one for customers who've set up their payment methods and another for those who still need to get that sorted. It's all about making invoicing easier and more user-friendly!",
+            "images": [
+              "assets/images/invoice-payment/invoice-wireframe.jpg",
+              "assets/images/invoice-payment/invoice-wireframe-payment-method-setup-done.jpg"
+            ]
+          },
+          {
+            "heading": "Choices, Choices, Choices",
+            "paragraph": "When we reached the high fidelity prototype stage, we meticulously refined every component. Our main goals were to streamline the process with minimal steps to prevent users from abandoning payment, to provide reassuring messages about secure payment processing, and to use color effectively to highlight crucial details on the invoice. To reduce steps, I introduced a number input next to the payment button, allowing users to adjust their payment amount directly. This eliminated the need for an additional screen for partial payments. To ensure user trust in their payment data security, I implemented an additional component emphasizing the safety of their credit card information.",
+            "images": ["assets/images/invoice-payment/invoice-security.jpg"]
+          }
+        ],
+        "prototype": "https://www.figma.com/proto/IQ9OmZiPdHPMckibkD1hWC/BlueCart-UX%2FUI?page-id=0%3A1&node-id=35-1841&viewport=1621%2C357%2C0.37&t=16CSFQtYzsjFWyJX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=24%3A199",
+        "prototypeHeader": "The Prototype",
+        "prototypeText": "Curious to see how these enhancements come together? Take a peek at the prototype! It's designed to make payment effortless with minimal steps, secure with clear messaging, and user-friendly with intuitive features like adjustable payment amounts. Dive in and explore how I simplifyed the payment experience"
+      },
+      {
+        "id": "BC-01",
+        "name": "Inventory",
+        "summary": "Binwise and BlueCart merged a few years ago and this project is about recreating the Binwise inventory system into BlueCart",
+        "imageUrl": "assets/images/inventory/bluecart-inventory.png",
+        "steps": [
+          {
+            "heading": "Grapes to Goods",
+            "paragraph": "BlueCart is made up of Main Business, a B2B platform connecting vendors to restaurants; Revolution Ordering, a platform linking restaurants to consumers; and BinWise, a high-end inventory tool for restaurants and wine cellars, specializing in wine, beer, and liquor inventory. Since the merger, our goal has been to integrate BinWise tools into BlueCart. However, this task is complex because BlueCart focuses on a wider range of inventory types, and BinWise was built a long time ago, making it far from a simple copy-paste exercise.",
+            "images": ["assets/images/inventory/wine-cellar.jpeg"]
+          },
+          {
+            "heading": "Crafting Inventory Harmony",
+            "paragraph": "One of the primary goals of this project is to integrate all functionalities of BinWise into BlueCart by the end of the process, allowing us to sunset BinWise. Initially, I designed wireframes with a focus on maintaining a near-real-time inventory. The concept aimed to centralize inventory management on a single screen, enabling users to oversee locations, quickly assess current inventory statuses, and perform actions like inventory counts, reviewing past periods, and tracking submissions. The system also facilitates searching the live inventory for optimal item locations. To ensure data accuracy, the bottom action bar prompts users to keep their data updated. For instance, after updating inventory and anticipating a busy evening with wine enthusiasts, failing to input these changes promptly compromises data accuracy.",
+            "images": [
+              "assets/images/inventory/inventory-live-view-wireframe.jpg"
+            ]
+          },
+          {
+            "heading": "Pouring Over the Details",
+            "paragraph": "n the world of BlueCart's inventory overhaul, compromise is the name of the game. We couldn't tap into a live inventory count just yet, as the necessary tools were still fermenting. So, we uncorked a few entry options: scanning, file uploads, and good old-fashioned manual entries. Each change is locked tight with traceable updates to keep the cellar secure. And let's not forget the diverse inventory lineup — from wines to beers, liquors, and even the alcohol-free crowd. It's a balancing act fit for a sommelier!",
+            "images": [
+              "assets/images/inventory/inventory-revision.jpg",
+              "assets/images/inventory/inventory-manual-entry.png"
+            ]
+          }
+        ],
+        "prototype": "https://www.figma.com/proto/I1BaLklYDnJP8Z58TlNoI8/BlueCart---Binwise-Integration?page-id=0%3A1&node-id=96-2664&viewport=108%2C-3784%2C0.33&t=naLdGNc0nR7YR5Fa-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=96%3A2664",
+        "prototypeHeader": "The Prototype",
+        "prototypeText": "Explore my prototype that revolutionizes inventory management! Discover seamless real-time tracking, secure data traceability, and flexible input methods. Check out the prototype now and witness the future of inventory handling!"
+      }
+    ]
+  },
+  {
+    "name": "BinWise",
+    "url": "https://www.binwise.com/",
+    "linkedIn": "https://www.linkedin.com/company/binwise/",
+    "description": "A high-end inventory tool for restaurants and wine cellars, specializing in wine, beer, and liquor inventory.",
+    "projects": [
+      {
+        "id": "BW-01",
+        "name": "Inventory",
+        "summary": "BinWise is a high-end inventory tool for restaurants and wine cellars, specializing in wine, beer, and liquor inventory.",
+        "imageUrl": "assets/images/inventory/bluecart-inventory.png",
+        "steps": [
+          {
+            "heading": "Grapes to Goods",
+            "paragraph": "BlueCart is made up of Main Business, a B2B platform connecting vendors to restaurants; Revolution Ordering, a platform linking restaurants to consumers; and BinWise, a high-end inventory tool for restaurants and wine cellars, specializing in wine, beer, and liquor inventory. Since the merger, our goal has been to integrate BinWise tools into BlueCart. However, this task is complex because BlueCart focuses on a wider range of inventory types, and BinWise was built a long time ago, making it far from a simple copy-paste exercise.",
+            "images": ["assets/images/inventory/wine-cellar.jpeg"]
+          },
+          {
+            "heading": "Crafting Inventory Harmony",
+            "paragraph": "One of the primary goals of this project is to integrate all functionalities of BinWise into BlueCart by the end of the process, allowing us to sunset BinWise. Initially, I designed wireframes with a focus on maintaining a near-real-time inventory. The concept aimed to centralize inventory management on a single screen, enabling users to oversee locations, quickly assess current inventory statuses, and perform actions like inventory counts, reviewing past periods, and tracking submissions. The system also facilitates searching the live inventory for optimal item locations. To ensure data accuracy, the bottom action bar prompts users to keep their data updated. For instance, after updating inventory and anticipating a busy evening with wine enthusiasts, failing to input these changes promptly compromises data accuracy.",
+            "images": [
+              "assets/images/inventory/inventory-live-view-wireframe.jpg"
+            ]
+          },
+          {
+            "heading": "Pouring Over the Details",
+            "paragraph": "In the world of BlueCart inventory overhaul, compromise is the name of the game. We couldn't tap into a live inventory count just yet, as the necessary tools were still fermenting. So, we uncorked a few entry options: scanning, file uploads, and good old-fashioned manual entries. Each change is locked tight with traceable updates to keep the cellar secure. And let's not forget the diverse inventory lineup — from wines to beers, liquors, and even the alcohol-free crowd. It's a balancing act fit for a sommelier!",
+            "images": [
+              "assets/images/inventory/inventory-revision.jpg",
+              "assets/images/inventory/inventory-manual-entry.png"
+            ]
+          }
+        ],
+        "prototype": "https://www.figma.com/proto/I1BaLklYDnJP8Z58TlNoI8/BlueCart---Binwise-Integration?page-id=0%3A1&node-id=96-2664&viewport=108%2C-3784%2C0.33&t=naLdGNc0nR7YR5Fa-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=96%3A2664",
+        "prototypeHeader": "The Prototype",
+        "prototypeText": "Explore my prototype that revolutionizes inventory management! Discover seamless real-time tracking, secure data traceability, and flexible input methods. Check out the prototype now and witness the future of inventory handling!"
+      }
+    ]
+  },
+  {
+    "name": "Volunteer & Personal Projects",
+    "description": "A collection of projects I've worked on as a volunteer or for personal growth.",
+    "projects": [
+      {
+        "id": "VP-01",
+        "name": "Church Sound Level Measurement",
+        "summary": "A small project designed to measure and analyze sound levels in different areas of the church to ensure an optimal worship experience for all attendees.",
+        "imageUrl": "assets/images/church-sound/decibel-meter.png",
+        "steps": [
+          {
+            "heading": "The Challenge",
+            "paragraph": "Our church was experiencing inconsistent sound quality throughout the worship space. Some areas were too loud, while others couldn't hear clearly. We needed a systematic way to measure sound levels across different seating areas to guide adjustments to the sound system.",
+            "images": ["assets/images/church-sound/decibel-meter-wireframe.png"]
+          },
+          {
+            "heading": "The Approach",
+            "paragraph": "I designed an interactive tool that allows sound technicians to record decibel measurements at various points in the church. The app visualizes this data on a floor plan, making it easy to identify problem areas. This helps the tech team make informed decisions about speaker placement and volume levels.",
+            "images": ["assets/images/church-sound/db-meter.jpg"]
+          }
+        ],
+        "prototype": "https://www.figma.com/proto/qlgXEINsGZGuaYc0tvBvqY/DB-Project?page-id=0%3A1&node-id=1-2&viewport=29%2C153%2C0.28&t=gG8ZtxGsilAG7Dt6-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2&show-proto-sidebar=1",
+        "prototypeHeader": "The Sound Measurement Tool",
+        "prototypeText": "This prototype demonstrates the interactive tool I created for our church's sound team. It allows them to record sound measurements at different locations, visualize the data on a map, and make adjustments to ensure everyone in the congregation can hear clearly. The tool has helped our tech team optimize speaker placement and volume levels for a more consistent worship experience.",
+        "gitRepo": "https://github.com/SR-Coder/accDbMeter"
+      }
+    ]
+  }
+]

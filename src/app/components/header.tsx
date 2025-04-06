@@ -1,6 +1,7 @@
-import { LucidePhone, LucideMail } from "lucide-react";
-import ContactLink from "./UI/ContactLink";
-import { ModeToggle } from "./UI/ModeToggle";
+import EmailLink from "./ui/EmailLink";
+import { ModeToggle } from "./ui/ModeToggle";
+import PhoneLink from "./ui/PhoneLink";
+import SocialLinks from "./ui/SocialLink";
 
 export default function Header() {
   return (
@@ -10,31 +11,26 @@ export default function Header() {
           <h1 className="dark:text-white text-6xl font-thin tracking-wider mb-4">
             Gerrit Maatkamp
           </h1>
-          <div className="flex gap-2">
-            <ContactLink
-              type="phone"
-              value="+13602984891"
-              icon={
-                <LucidePhone
-                  size={20}
-                  className="text-gray-200 dark:text-gray-300"
-                />
-              }
-            >
-              360-298-4891
-            </ContactLink>
-            <ContactLink
-              type="email"
-              value="gerrit.maatkamp@gmail.com"
-              icon={
-                <LucideMail
-                  size={20}
-                  className="text-gray-200 dark:text-gray-300"
-                />
-              }
-            >
-              gerrit.maatkamp@gmail.com
-            </ContactLink>
+          <div className="flex gap-2 flex-wrap">
+            <EmailLink email="gerrit.maatkamp@gmail.com" />
+            <PhoneLink
+              phoneNumber="+13602984891"
+              formattedNumber="360-298-4891"
+            />
+            <SocialLinks
+              socials={[
+                {
+                  platform: "github",
+                  username: "gerritmaatkamp",
+                  ariaLabel: "View my GitHub profile",
+                },
+                {
+                  platform: "linkedin",
+                  username: "gerrit-maatkamp",
+                  ariaLabel: "Connect with me on LinkedIn",
+                },
+              ]}
+            />
           </div>
         </div>
 
