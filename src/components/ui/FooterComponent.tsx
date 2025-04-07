@@ -26,12 +26,12 @@ export default function FooterComponent({ className, ...props }: FooterProps) {
             socials={[
               {
                 platform: "github",
-                username: "gerritmaatkamp",
+                username: "gerrit-maatkamp",
                 ariaLabel: "View my GitHub profile",
               },
               {
                 platform: "linkedin",
-                username: "gerrit-maatkamp",
+                username: "gerritmaatkamp",
                 ariaLabel: "Connect with me on LinkedIn",
               },
             ]}
