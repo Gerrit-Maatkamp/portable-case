@@ -82,10 +82,10 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
           <div className="px-6">
             <h3>{project.prototypeHeader}</h3>
             <p>{project.prototypeText}</p>
-            <div className="flex flex-col sm:flex-row justify-center w-full gap-6">
+            <div className="flex flex-col justify-center w-full gap-2">
               <Button
                 variant="outline"
-                className="flex items-center justify-center gap-4 h-20 mt-8 px-6 text-xl
+                className="flex items-center justify-center gap-4 h-20 mt-4 px-6 text-xl
                 transition-all duration-300 ease-in-out 
                 bg-primary hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30
                 text-primary-foreground dark:text-primary-foreground
@@ -101,10 +101,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
               {project.url && (
                 <Button
                   variant="outline"
-                  className="flex items-center justify-center gap-4 h-20 mt-8 px-6
-                  font-['HelveticaNeueCondensedBlack','HelveticaNeue',Helvetica,sans-serif] text-xl
-                  transition-all duration-300 ease-in-out 
-                  bg-primary/10 hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30
+                  className="flex items-center justify-center gap-4 h-20 mt-4 px-6 text-xl transition-all duration-300 ease-in-out 
+                  bg-primary hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30
                   text-primary-foreground dark:text-primary-foreground
                   border border-primary/20 dark:border-primary/30"
                   onClick={() => openUrl(project.url)}

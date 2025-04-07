@@ -40,7 +40,7 @@ const ProjectsComponent: React.FC = () => {
               linkedin={project.linkedIn}
               website={project.url}
             />
-            <div className="flex flex-wrap gap-4 p-4 justify-center">
+            <div className="flex flex-wrap gap-4 p-4 justify-start">
               {project.projects.map((p: ProjectItem) => {
                 return (
                   <div
