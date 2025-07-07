@@ -37,6 +37,10 @@ export async function GET() {
         temperature2m: hourly.variables(0)!.valuesArray()!,
       },
     };
+
+    // Log the fetched weather data for debugging
+    console.log("Fetched weather data:", weatherData);
+
     return NextResponse.json(weatherData);
   } catch (error) {
     console.error("Error fetching weather data:", error);

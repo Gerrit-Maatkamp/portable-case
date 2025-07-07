@@ -9,7 +9,6 @@ export default function HeaderComponent() {
           <div className="absolute inset-0 bg-gradient-to-r from-slate-500 to-slate-900 animate-gradient-x opacity-0 dark:opacity-100 transition-opacity duration-100"></div>
         </div>
 
-        {/* Content with relative positioning to appear above the gradient */}
         <div className="relative z-10 text-center">
           <h1 className="dark:text-white text-6xl font-thin tracking-wider mb-4">
             Gerrit Maatkamp

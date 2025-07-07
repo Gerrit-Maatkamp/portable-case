@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import PhoneLink from "./PhoneLink";
 import EmailLink from "./EmailLink";
 import SocialLinks from "./SocialLink";
+// import WeatherDisplay from "../WeatherDisplay";
 
 interface FooterProps extends React.HTMLAttributes<HTMLElement> {
   className?: string;
@@ -41,6 +42,8 @@ export default function FooterComponent({ className, ...props }: FooterProps) {
           © {new Date().getFullYear()} Gerrit Maatkamp. All rights reserved.
         </p>
       </div>
+      {/*! restore later and addd a weather hour that says, time to hire this guy  */}
+      {/* <WeatherDisplay />  */}
     </footer>
   );
 }
